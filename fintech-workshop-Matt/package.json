@@ -1,0 +1,28 @@
+{
+  "name": "vh-fintech-workshop",
+  "version": "1.0.0",
+  "description": "The Fintech Technical Workshop for Venture Hacks 2018 Spring",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "polyserve public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venture-hacks/fintech-workshop.git"
+  },
+  "keywords": [
+    "widgets",
+    "fintech",
+    "polymer"
+  ],
+  "author": "austin ce <austin.cawley@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venture-hacks/fintech-workshop/issues"
+  },
+  "homepage": "https://github.com/venture-hacks/fintech-workshop#readme",
+  "devDependencies": {
+    "polyserve": "^0.27.0"
+  }
+}

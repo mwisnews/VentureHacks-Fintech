@@ -1,0 +1,49 @@
+/*
+VH Fintech Workshop Main Styles
+*/
+
+.main-section {
+    background: lightblue;
+}
+
+/* Our value propositions are within the header */
+
+header #value-propositions {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #222222;
+}
+
+/* Make sure that everything fits! */
+header #value-propositions .container {
+    width: 100%;
+}
+
+header .value-prop-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+
+.crypto {
+    padding: 20px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center horizontally in column */
+}
+
+.crypto .widget-container {
+    width: 80%;
+}
+
+.crypto .widget-container.tradingview {
+    height: 400px; /* Widget fills up this entire space */
+}
+
+
+
