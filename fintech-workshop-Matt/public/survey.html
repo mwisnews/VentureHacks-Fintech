@@ -16,76 +16,50 @@
     
     <body>
         
-        <nav id="main-nav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <a class="navbar-brand page-scroll" href="#page-top">Recover and Build Your Credit</a>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between">
+          <div id="name">
+            <a class="navbar-brand" href="#">CreDucks</a>
+          </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            
 
-                <div class="navbar-user-icon-container">
-                    <!-- Probably want to replace this with something that actually is a user icon -->
-                    <img id="user-icon" src="img/future-bg.jpg" alt="User image">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Budget Allocator</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Industry
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Financial</a>
+                  <a class="dropdown-item" href="#">Health Care</a>
+                  <a class="dropdown-item" href="#">Industrial</a>
+                  <a class="dropdown-item" href="#">Information Technology</a>
+                  <a class="dropdown-item" href="#">Materials</a>
+                  <a class="dropdown-item" href="#">Telecommunication Services</a>
+                  <a class="dropdown-item" href="#">Utilities</a>
+                  <a class="dropdown-item" href="#">Energy</a>
+                  <a class="dropdown-item" href="#">Consumer Staples</a>
+                  
                 </div>
-            </div>
+              </li>
+            </ul>
+            
+          </div>
         </nav>
         
         
-        <header>
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-heading">Credit Savers.</div>
-            <div class="intro-lead-in">Revive and Jumpstart Your Startup.</div>
-            <div id="login-button" class="btn btn-xl">Join</div>
-        </div>
-    </div>
-
-    <aside id="value-propositions">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <!-- Font Awesome gives you access to tons of FREE icons -->
-                    <!-- Change one of the icons by changing 'fa-clock-o'
-                        with an icon name found on : http://fontawesome.io/icons/
-                    -->
-                    <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <img src="idea.jpg" height="42" width="42">
-                        </span>
-                    <h4 class="value-prop-heading">Wisdom</h4>
-                    <p class="text-muted">Helping startups gain credit.</p>
-                </div>
-
-                <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-users fa-stack-1x fa-inverse"></i>
-                        </span>
-                    <h4 class="value-prop-heading">Responsibility</h4>
-                    <p class="text-muted">Build credit to get that loan.</p>
-                </div>
-
-                <!-- ADD A THIRD VALUE PROPOSITION HERE -->
-                <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-
-                    <h4 class="value-prop-heading">Beliefs</h4>
-                    <p class="text-muted">No startup should fail due to bad credit!</p>
-                </div>
-            </div>
-        </div>
-    </aside>
-</header>
-        
-        
-        
-        <div id="survey-container">
+        <div id="survey-container" class="container">
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label>Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
               <div class="form-group">
