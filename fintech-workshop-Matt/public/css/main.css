@@ -69,6 +69,7 @@ header .industries-heading {
 .boxed {
   border: 1px solid black;
   background: lightgray;
+  width: 80%;
 }
 .fa{
     color: blue;
