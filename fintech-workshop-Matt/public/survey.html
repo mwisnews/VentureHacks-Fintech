@@ -40,7 +40,6 @@
                   Industry
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<<<<<<< HEAD
                   <a class="dropdown-item" href="financial.html">Financial</a>
                   <a class="dropdown-item" href="healthcare.html">Health Care</a>
                   <a class="dropdown-item" href="industrial.html">Industrial</a>
@@ -51,18 +50,6 @@
                   <a class="dropdown-item" href="energy.html">Energy</a>
                   <a class="dropdown-item" href="consumerstaples.html">Consumer Staples</a>
                   <a class="dropdown-item" href="consumerdiscretion.html">Consumer Discrestionary</a>
-                  
-=======
-                  <a class="dropdown-item" href="#">Financial</a>
-                  <a class="dropdown-item" href="#">Health Care</a>
-                  <a class="dropdown-item" href="#">Industrial</a>
-                  <a class="dropdown-item" href="#">Information Technology</a>
-                  <a class="dropdown-item" href="#">Materials</a>
-                  <a class="dropdown-item" href="#">Telecommunication Services</a>
-                  <a class="dropdown-item" href="#">Utilities</a>
-                  <a class="dropdown-item" href="#">Energy</a>
-                  <a class="dropdown-item" href="#">Consumer Staples</a>
->>>>>>> 8d28d05dc1bb7bd95f2c9ed5facdb16f153dc938
                 </div>
               </li>
             </ul>
@@ -70,9 +57,12 @@
           </div>
         </nav>
         
+        <div class="container">
+        <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+        </div>
         
         <div id="survey-container" class="container">
-            <form onsubmit="google.charts.setOnLoadCallback(drawChart)">
+            <form >
               <div class="form-group">
                 <label>How much money do you have saved to start up the business?</label>
                 <input type="number" class="form-control" id="assets1" placeholder="Enter Dollar Amount">
@@ -86,9 +76,7 @@
         </div>
         
         
-        <div class="container">
-        <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
-        </div>
+        
         
         
         
@@ -135,9 +123,8 @@
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load("current", {packages:["corechart"]});
-
-        //google.charts.setOnLoadCallback(drawChart);
-    document.getElementById("myBtn").addEventListener("click", google.charts.setOnLoadCallback(drawChart));
+        google.charts.setOnLoadCallback(drawChart);
+//    document.getElementById("myBtn").addEventListener("click", google.charts.setOnLoadCallback(drawChart));
       function drawChart() {
 //          var q1 = document.getElementById("assets1").value;
 //          var q2 = document.getElementById("assets2").value;
@@ -164,12 +151,10 @@
           ['Emergency Funds',    5],
           ['Debt',    5]
         ]);
-
         var options = {
           title: 'Sector Percentages',
           is3D: true,
         };
-
         var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
         chart.draw(data, options);
         
