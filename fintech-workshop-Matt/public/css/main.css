@@ -25,7 +25,7 @@ header #value-propositions .container {
 
 header .value-prop-heading {
     margin: 15px 0;
-    color: cyan;
+    color: blue;
     text-transform: none;
 }
 
@@ -69,4 +69,11 @@ header .industries-heading {
 .boxed {
   border: 1px solid black;
   background: lightgray;
+}
+.fa{
+    color: blue;
+}
+
+#login-button {
+    background-color: blue;
 }
