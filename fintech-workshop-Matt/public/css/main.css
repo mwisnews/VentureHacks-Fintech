@@ -70,3 +70,8 @@ header .industries-heading {
   border: 1px solid black;
   background: lightgray;
 }
+
+.output {
+    background-color: black;
+    color: white;
+}

@@ -31,12 +31,12 @@ function calcA() {
         $('#else').css("background-color", "green");
     }
     
-    var recmarket = 0.08;
-    var recrd = 0.37;
+    var recmarket = 0.21;
+    var recrd = 0.31;
     var reclegal = 0.01;
-    var recassets = 0.42;
-    var recemer = 0.05;
-    var recdebt = 0.07;
+    var recassets = 0.33;
+    var recemer = 0.06;
+    var recdebt = 0.08;
     
     var marketrate = ~~market/assets;
     var rdrate = ~~rd/assets;
