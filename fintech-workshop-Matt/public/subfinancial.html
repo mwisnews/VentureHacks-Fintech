@@ -61,7 +61,7 @@
         
         <div id="survey-container" class="container">
             
-            <form onsubmit="calcA()">
+            <form onsubmit="calcA(); return false;">
                 <div class="form-group">
                 <label>How much money do you have saved to start up the business?</label>
                 <input type="number" class="form-control" id="assets1" placeholder="Enter Dollar Amount">
@@ -97,20 +97,27 @@
                 <label>Debt</label>
                 <input type="number" class="form-control" id="debt" placeholder="Enter Dollar Amount">
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" id="butn" class="btn btn-primary">Submit</button>
             </form>
         </div>
         
-        <div id="if" class="container">
-            You do not have enough money to start up your business using the expenses you input, here are suggestions on how to allocate your money
+        <div id="analysis" class="container d-flex justify-content-around">
+        <div id="if" class="decision rounded" style="background-color: black">
+            You do not have enough money yet.
         </div>
-        <div id="elseif" class="container">
-            You have enough money to start up the business, but here are some suggestions on allocating money so you do not end up in debt.
+        <div id="elseif" class="decision rounded" style="background-color: black">
+            You almost have enough money.
         </div>
-        <div id="else" class="container">
-            You are able to start up your business successfully, just be careful about where you allocate your money in the future. This is a solid budget plan. All you need to do is wait. Credit increases, as credit improves as time progresses, as long as you do not deviate from the budget plan you established in this form. Here are some areas where you can spend more money if you would like.
+        <div id="else" class="decision rounded" style="background-color: black">
+            You have a safe amount of money.
+        </div>
         </div>
         
+        <div id="moneyAna" class="container">
+            
+        
+        </div>
+            
         <script src="vendor/jquery/jquery.min.js"></script>
 
         <!-- Bootstrap Core JavaScript -->
