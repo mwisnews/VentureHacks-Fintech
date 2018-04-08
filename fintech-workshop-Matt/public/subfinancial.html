@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Credit Helper</title>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Base contains overrides to bootstrap for the purposes of the demo -->
+        <link href="css/base.css" type="text/css" rel="stylesheet"/>
+        <!-- Where we'll be adding out all styles -->
+        <link href="css/main.css" type="text/css" rel="stylesheet"/>
+        <!-- CSS Specifically for forms -->
+        <link rel="stylesheet" href="css/survey.css" type="text/css">
+    </head>
+    
+    <body>
+        
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between">
+          <div id="name">
+            <a class="navbar-brand" href="index.html">CreDucks</a>
+          </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            
+            
+        
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Budget Allocator</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Industry
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="financial.html">Financial</a>
+                  <a class="dropdown-item" href="healthcare.html">Health Care</a>
+                  <a class="dropdown-item" href="industrial.html">Industrial</a>
+                  <a class="dropdown-item" href="it.html">Information Technology</a>
+                  <a class="dropdown-item" href="materials.html">Materials</a>
+                  <a class="dropdown-item" href="telecom.html">Telecommunication Services</a>
+                  <a class="dropdown-item" href="utilities.html">Utilities</a>
+                  <a class="dropdown-item" href="energy.html">Energy</a>
+                  <a class="dropdown-item" href="consumerstaples.html">Consumer Staples</a>
+                  <a class="dropdown-item" href="consumerdiscretion.html">Consumer Discrestionary</a>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+        
+        <h1 class="display-3">Budget Allocator</h1>
+        
+        <div id="survey-container" class="container">
+            
+            <form onsubmit="calcA()">
+                <div class="form-group">
+                <label>How much money do you have saved to start up the business?</label>
+                <input type="number" class="form-control" id="assets1" placeholder="Enter Dollar Amount">
+              </div>
+              <div class="form-group">
+                <label>How much money will you receive from investors?</label>
+                <input type="number" class="form-control" id="assets2" placeholder="Enter Dollar Amount">
+              </div>
+                
+                <hr class="hr-primary"/>
+                
+              <div class="form-group">
+                <label>Marketing</label>
+                <input type="number" class="form-control" id="marketing" placeholder="Enter Dollar Amount">
+              </div>
+              <div class="form-group">
+                <label>Research and Development</label>
+                <input type="number" class="form-control" id="rd" placeholder="Enter Dollar Amount">
+              </div>
+              <div class="form-group">
+                <label>Legal</label>
+                <input type="number" class="form-control" id="legal" placeholder="Enter Dollar Amount">
+              </div>
+              <div class="form-group">
+                <label>Utilties</label>
+                <input type="number" class="form-control" id="util" placeholder="Enter Dollar Amount">
+              </div>
+              <div class="form-group">
+                <label>Emergency</label>
+                <input type="number" class="form-control" id="emer" placeholder="Enter Dollar Amount">
+              </div>
+              <div class="form-group">
+                <label>Debt</label>
+                <input type="number" class="form-control" id="debt" placeholder="Enter Dollar Amount">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        
+        <div id="if" class="container">
+            You do not have enough money to start up your business using the expenses you input, here are suggestions on how to allocate your money
+        </div>
+        <div id="elseif" class="container">
+            You have enough money to start up the business, but here are some suggestions on allocating money so you do not end up in debt.
+        </div>
+        <div id="else" class="container">
+            You are able to start up your business successfully, just be careful about where you allocate your money in the future. This is a solid budget plan. All you need to do is wait. Credit increases, as credit improves as time progresses, as long as you do not deviate from the budget plan you established in this form. Here are some areas where you can spend more money if you would like.
+        </div>
+        
+        <script src="vendor/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- Plugin JavaScript for Bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
+                integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
+                crossorigin="anonymous"></script>
+        
+        <!-- Theme JavaScript -->
+        <script src="js/main.js" type="text/javascript">
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/budgetcalc.js"></script>
+
+
+    </body>
+</html>

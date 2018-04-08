@@ -2,3 +2,16 @@
     max-width: 50%;
     padding: 10px;
 }
+
+#if {
+    visibility: hidden;
+}
+
+#elseif {
+    visibility: hidden;
+}
+
+#else {
+    visibility: hidden;
+}
+
