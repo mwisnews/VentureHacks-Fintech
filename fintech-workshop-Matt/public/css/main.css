@@ -66,3 +66,7 @@ header .industries-heading {
     text-align: center;
 }
 
+.boxed {
+  border: 1px solid black;
+  background: lightgray;
+}
