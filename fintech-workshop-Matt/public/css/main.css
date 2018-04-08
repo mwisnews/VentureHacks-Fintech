@@ -57,8 +57,16 @@ header .industries-heading {
 #industries {
     color:black;
 }
+#aboutus {
+    color:black;
+}
+
 
 .display-3 {
     text-align: center;
 }
 
+.boxed {
+  border: 1px solid black;
+  background: lightgray;
+}

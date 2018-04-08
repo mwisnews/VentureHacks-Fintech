@@ -28,10 +28,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="aboutus.html">About Us<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Budget Allocator</a>
+                <a class="nav-link" href="subfinancial.html">Budget Allocator</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,7 +55,59 @@
             
           </div>
         </nav>
+        <center>
+          <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+        </center>
+
+      <center> 
+        <div class="boxed">
+        <a href="subfinancial.html"><h2><b><u><font face="merriweather" style="color: black">Get Your Personalized Financial Consultation</font></u></b></h2></a>
+      </div>
+       </center>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+//    document.getElementById("myBtn").addEventListener("click", google.charts.setOnLoadCallback(drawChart));
+
+      function drawChart() {
+//          var q1 = document.getElementById("assets1").value;
+//          var q2 = document.getElementById("assets2").value;
+//          var assets = ~~q1 + ~~q2;
+////          console.log(assets);
+//          var marketing = 0.30;
+//          var RD = 0.30;
+//          var legal = 0.25;
+//          var util = 0.05;
+//          var emer = 0.05;
+//          var debt = 0.05;
+//          console.log(assets*marketing);
+//          console.log(assets*RD);
+//          console.log(assets*legal);
+//          console.log(assets*util);
+//          console.log(assets*emer);
+//          console.log(assets*debt);
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Marketing',     4],
+          ['R&D',      33],
+          ['Legal', 1],
+          ['Utilities',    30],
+          ['Emergency Funds',    7],
+          ['Debt',    25]
+        ]);
+        var options = {
+          title: 'Sector Percentages',
+          is3D: true,
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
         
+      }
+        
+    </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
