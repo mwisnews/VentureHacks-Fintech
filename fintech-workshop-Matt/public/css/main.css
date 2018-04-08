@@ -50,4 +50,11 @@ header .industries-heading {
     height: 400px; /* Widget fills up this entire space */
 }
 
+#industry-header {
+    color:black;
+
+}
+#industries {
+    color:black;
+}
 
