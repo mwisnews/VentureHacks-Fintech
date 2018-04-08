@@ -3,15 +3,15 @@
     padding: 10px;
 }
 
-#if {
-    visibility: hidden;
+.decision {
+    border: 1px solid black;
+    border-radius:  100px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    
+    background-color: black;
+    font-size: 2vw;
+    visibility: visible;
 }
-
-#elseif {
-    visibility: hidden;
-}
-
-#else {
-    visibility: hidden;
-}
-

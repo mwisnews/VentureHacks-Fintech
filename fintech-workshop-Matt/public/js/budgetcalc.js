@@ -19,22 +19,19 @@ function calcA() {
     var a = expenses/assets;
     console.log(a);
     
-    var parent = $("#aCalc");
-    
     if (a >= 1) {
         console.log("yes1");
-        
+        $('#if').css("background-color", "red");
         
     } else if(a >= 0.9) {
         console.log("yes2");
-        parent.append('<div>You have enough money to start up the business, but here are some suggestions on allocating money so you do not end up in debt.</div>');
+        $('#elseif').css("background-color", "red");
     } else {
         console.log("yes3");
-        var txt3 = document.createElement("p");
-        txt3.innerHTML = "You are able to start up your business successfully, just be careful about where you allocate your money in the future. This is a solid budget plan. All you need to do is wait. Credit increases, as credit improves as time progresses, as long as you do not deviate from the budget plan you established in this form. Here are some areas where you can spend more money if you would like.";
-        console.log(txt3);
-        $('#aCalc').append(txt3);
+        $('#else').css("background-color", "green");
     }
+    
+    
     
 }
 
