@@ -69,20 +69,30 @@ header .industries-heading {
 .boxed {
   border: 1px solid black;
   background: lightgray;
-<<<<<<< HEAD
+
 }
 
 .output {
     background-color: black;
     color: white;
-=======
-  width: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.2vw;
+    border-radius: 20px;
+    text-align: center;
 }
+
+#stuff {
+    width 80%;
+}
+
 .fa{
     color: blue;
 }
 
 #login-button {
     background-color: blue;
->>>>>>> 021ab433c84e717e5ed57662a33363fd3c919a30
 }
