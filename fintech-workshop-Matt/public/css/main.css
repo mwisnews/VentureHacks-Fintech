@@ -69,6 +69,7 @@ header .industries-heading {
 .boxed {
   border: 1px solid black;
   background: lightgray;
+    width: 80%;
 
 }
 
@@ -83,10 +84,11 @@ header .industries-heading {
     font-size: 1.2vw;
     border-radius: 20px;
     text-align: center;
+    border: 2px solid white;
 }
 
 #stuff {
-    width 80%;
+    width: 80%;
 }
 
 .fa{
